@@ -14,11 +14,6 @@ Chapecó, 09 de outubro de 2023.
 1. Introdução
 Code Issues Pull requests Actions Projects Wiki Security Ins
 
-**_EM CONSTRUÇÃO_**
-
-14/10/2023, 16:32 Home · radamesp7/UnoEngenharia-I-2023 Wiki · GitHub
-
-https://github.com/radamesp7/UnoEngenharia-I-2023/wiki 2/16
 1.1 Resumo do Projeto (Descrição textual)
 
 1.1.1 Descrição Textual.
