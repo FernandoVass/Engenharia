@@ -1,7 +1,9 @@
 <tbody style="width> 25%; border: 2px solid black;">
   <tr>
     <td>
-      <img src=https://github.com/FernandoVass/Engenharia/blob/main/BRASAO_UNO_AZUL.png align=rigth width="70" heigh="85"/>
+      <img 
+        src=https://github.com/FernandoVass/Engenharia/blob/main/BRASAO_UNO_AZUL.png 
+        align=rigth; width="70"; heigh="85"/>
     </td>
   </tr>
 </tbody>
