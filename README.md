@@ -30,14 +30,9 @@ bibliotecas e de sub-sistemas)
 
 IEEE Std. 830 – 1993. IEEE Recommended Practice for Software Requirements
 Specifications.
-IEEE ISO/IEC/IEEE 29148 – 2011. IEEE Systems and software engineering —
+IEEE ISO/IEC/IEEE 29148 – 2011. IEEE Systems and software engineering 
 Life cycle processes — Requirements engineering
-- OBSERVAÇÃO: Os itens deste modelo de especificação, recomendado pela IEEE, poderão ser co
-
-14/10/2023, 16:32 Home · radamesp7/UnoEngenharia-I-2023 Wiki · GitHub
-
-https://github.com/radamesp7/UnoEngenharia-I-2023/wiki 16/16
-
+OBSERVAÇÃO: Os itens deste modelo de especificação, recomendado pela IEEE, poderão ser co
 2.2.2 Fluxos dos casos de uso (Casos de Uso Expandidos e Diagramas de Atividades)
 2.2.2.1 Caso de Uso expandido "Solicitar Lanche":
 2.2.2.2 Modelagem com o diagrama de Atividades UML do Caso de Uso expandido Solicitar
