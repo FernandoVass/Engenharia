@@ -13,9 +13,17 @@
 
 # Título: "SISTEMA DE COMPRA DE MATÉRIA PRIMA - SCMP - Sistema de Compra de Lanches - SCL"
 ## Equipe (engenheiro e desenvolvedores):
+**Aluno Fernando Vassoler Nunes**
 ## Chapecó, 09 de outubro de 2023.
+
+***
+
 # 1. Introdução
 ## 1.1 Resumo do Projeto (Descrição textual)
+**1.1.1(Descrição textual)**
+O sistema se incia quando um atendente 
+**1.1.2 Características gerais do "Sistema de Compra de Matéria Prima - SCMP e
+Sistema de Compra de Lanches - SCL".**
 ## 1.2 Plataforma de desenvolvimento (O equipamento dos desenvolvedores e ferramentas de
 software)
 ## 1.3 Plataforma de operação (O equipamento do cliente/usuário do sistema)
