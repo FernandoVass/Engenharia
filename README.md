@@ -6,8 +6,11 @@
     </td>
   </tr>
 </tbody>
+
 # UNIVERSIDADE COMUNITÁRIA REGIONAL DE CHAPECÓ - UNOCHAPECÓ
+
 # ESCOLA POLITÉCNICA
+
 # Título: "SISTEMA DE COMPRA DE MATÉRIA PRIMA - SCMP - Sistema de Compra de Lanches - SCL"
 ## Equipe (engenheiro e desenvolvedores):
 ## Chapecó, 09 de outubro de 2023.
