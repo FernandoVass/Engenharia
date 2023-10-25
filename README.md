@@ -1,4 +1,4 @@
-<tbody style="width=25%; border: 2px solid black;">
+<tbody style="width=15%; border: 2px solid black;">
   <tr>
     <td>
       <img 
