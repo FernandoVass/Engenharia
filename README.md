@@ -24,6 +24,7 @@
 O sistema se incia quando chega os produtos para o estoque. O estoquista registra os produtos no sistema. Após a chegada do cliente o caixa tem 2 opções, passar a compra do cliente ou 
 consultar o estoque do sistema para algum pedido que o cliente não encontre na loja. Caso não tenha o produto na loja mas tenha no estoque o caixa pede para o estoquista buscar o produto.
 Após a compra o sistema encerra o procedimento de baixas. E o cliente sai com sua compra.
+
 **1.1.2 Características gerais do "Sistema de Compra de Matéria Prima - SCMP e
 Sistema de Compra de Lanches - SCL".**
 ## 1.2 Plataforma de desenvolvimento (O equipamento dos desenvolvedores e ferramentas de
