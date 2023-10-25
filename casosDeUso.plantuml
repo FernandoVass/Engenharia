@@ -1,0 +1,43 @@
+@startuml casodeUso
+    left to right direction
+
+    actor "Cliente" as Cl
+    rectangle Loja_de_Ferramentas {
+        usecase "Escolhe a Ferramenta" as UC1
+        usecase "Compra a Ferramenta" as UC2
+        usecase "Sai da loja" as UC3
+    }
+
+    Cl --> UC1
+    Cl --> UC2
+    Cl --> UC3
+
+    actor "Funcionario" as Fc
+    rectangle Atendente {
+        usecase "Atende Cliente" as UF1
+        usecase "Recebe Pagamento" as UF2
+        usecase "Entrega o produto" as UF3
+        usecase "Finaliza compra" as UF4
+
+    }
+
+    Fc --> UF1
+    Fc --> UF2
+    Fc --> UF3
+    Fc --> UF4
+    Fc -- Cl
+
+    actor "Gerente" as Gv
+    rectangle Gerente {
+        usecase "Faz a escala" as UG1
+        usecase "Faz pedido de produtos" as UG2
+        usecase "Organiza a Papelada" as UG3
+
+        Gv --> UG1
+        Gv --> UG2
+        Gv --> UG3
+        Gv -- Fc
+
+    }
+
+@enduml
