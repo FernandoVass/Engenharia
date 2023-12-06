@@ -1,0 +1,65 @@
+@startuml
+!theme cloudscape-design
+<style>
+activityDiagram {
+FontName arial
+FontSize 18
+diamond {
+BackgroundColor #007FFF
+FontColor White
+FontName arial
+FontSize 25
+}
+arrow {
+FontColor #FF0000
+FontName arial
+FontSize 15
+}
+partition {
+FontSize 25
+RoundCorner 10
+BackgroundColor #F8F8FF
+}
+note {
+FontColor #000000
+LineColor #20B2AA
+BackgroundColor transparent
+}
+}
+document {
+LineColor #000000
+RoundCorner 30
+}
+</style>
+' --- Diagrama de Atividades ---
+|Cliente(ator)|
+start
+partition SCL-SCMP{
+:1 - Chegar no balcão para atendimento;
+:2 - Solicitar ferramenta;
+|Sistema|
+:3 - Informar Estoque;
+|Cliente(ator)|
+if (Ferramenta em estoque disponível?) then ([Sim])
+|Sistema|
+:4 - Informar valor do pedido;
+|Cliente(ator)|
+:5 - Pagar o produto;
+if (consegue pagar?) then ([Sim])
+|Sistema|
+:6 - Fornecer recibo;
+:7 - Dar Baixa no Estoque;
+else ([Não])
+|Cliente(ator)|
+stop
+note right: Cliente desiste do pedido
+endif
+else ([Não])
+|Cliente(ator)|
+stop
+note right: Cliente desiste do pedido
+endif
+}
+|Cliente(ator)|
+stop
+@enduml
