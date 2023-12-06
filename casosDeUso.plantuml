@@ -1,43 +1,30 @@
-@startuml casodeUso
-    left to right direction
+@startuml
 
-    actor "Cliente" as Cl
-    rectangle Loja_de_Ferramentas {
-        usecase "Escolhe a Ferramenta" as UC1
-        usecase "Compra a Ferramenta" as UC2
-        usecase "Sai da loja" as UC3
-    }
-
-    Cl --> UC1
-    Cl --> UC2
-    Cl --> UC3
-
-    actor "Funcionario" as Fc
-    rectangle Atendente {
-        usecase "Atende Cliente" as UF1
-        usecase "Recebe Pagamento" as UF2
-        usecase "Entrega o produto" as UF3
-        usecase "Finaliza compra" as UF4
-
-    }
-
-    Fc --> UF1
-    Fc --> UF2
-    Fc --> UF3
-    Fc --> UF4
-    Fc -- Cl
-
-    actor "Gerente" as Gv
-    rectangle Gerente {
-        usecase "Faz a escala" as UG1
-        usecase "Faz pedido de produtos" as UG2
-        usecase "Organiza a Papelada" as UG3
-
-        Gv --> UG1
-        Gv --> UG2
-        Gv --> UG3
-        Gv -- Fc
-
-    }
-
+top to bottom direction
+!define BACKGROUND_COLOR white
+skinparam backgroundColor BACKGROUND_COLOR
+actor Atendente as Atend
+actor Caixa as Caixa
+actor Cliente as Cli
+Atend <|-- Caixa #orange;line:orange;line.bold;text:orange
+rectangle "SISTEMA DE COMPRA DE MATERIA PRIMA - SCMP" as Sistema #white;line:black;line.bold;text:black; {
+usecase "Atender Cliente" as At
+usecase "Consultar Estoque" as Card
+usecase "Solicitar Ferramenta" as Sol
+usecase "Aguardar Entrega" as Ag
+usecase "Pegar o produto" as Prod
+usecase "Entregar Ferramenta" as Ent
+usecase/ (Pagar) as Pag
+}
+Cli -right- Ag #blue;line:blue;line.bold;text:blue
+Cli -right- Prod #blue;line:blue;line.bold;text:blue
+Cli -right- Pag #blue;line:blue;line.bold;text:blue
+Cli -right- Sol #blue;line:blue;line.bold;text:blue
+Ag ..> Sol #red;line:red;text:red : <extends>
+Atend -right- Card #blue;line:blue;line.bold;text:blue
+Atend -left- Ent #blue;line:blue;line.bold;text:blue
+(At) <|-- (Ent) #orange;line:orange;line.bold;text:orange
+Caixa -left- Pag #blue;line:blue;line.bold;text:blue
+Atend -left- At #blue;line:blue;line.bold;text:blue
+Sol ..> Card #red;line:red;text:red : <Include>
 @enduml
