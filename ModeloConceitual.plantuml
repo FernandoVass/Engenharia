@@ -1,0 +1,68 @@
+@startuml
+
+!theme carbon-gray
+
+' Definindo as classes
+
+class Loja {
+  - endereco: String
+  - nome: String
+  - bairro: string
+}
+
+class Atendente {
+  - nome: String
+}
+
+class Funcionario {
+  - nome: String
+  - crachá: Int
+  - cargo: String
+  - horario: time
+}
+
+class Estoque{
+  - tamanho: Double
+  - produtos: string
+}
+
+class Caixa {
+  - nome: String
+  - setor: String
+}
+
+class Pagamento {
+  - valor: Double
+}
+
+class Cartao {
+  - numero: String
+  - bandeira: String
+}
+
+class Recibo {
+  - numero: String
+}
+Class Dinheiro{
+  - Real : Double
+}
+
+' Relações de associação com multiplicidades e direções
+
+Atendente "1" -- "*" Funcionario : trabalha>
+Atendente "1" -- "*" Loja :>
+Funcionario "1" -- "*" Estoque : Produtos>
+Caixa "1" -- "*" Pagamento:>
+Caixa "1" -- "*" Loja:>
+Cartao "1" -- "*" Recibo:>
+Dinheiro "1" -- "*" Recibo:>
+
+
+
+' Relações de generalização/especialização
+Funcionario <|-- Atendente
+Funcionario <|-- Caixa
+Pagamento "1" <|-- "*" Cartao : utiliza >
+Pagamento "1" <|-- "*" Dinheiro : utiliza >
+
+@enduml
